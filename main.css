@@ -1,0 +1,33 @@
+.container {
+  height: 700px;
+  width: 790px;
+  background-color: black;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 10px;
+}
+.column1 {
+  display: inline-block;
+}
+.column2 {
+  display: inline-block;
+}
+.column3 {
+  display: inline-block;
+}
+.column4 {
+  display: inline-block;
+}
+.column5 {
+  display: inline-block;
+}
+.column6 {
+  display: inline-block;
+}
