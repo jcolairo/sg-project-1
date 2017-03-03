@@ -1,0 +1,19 @@
+{
+  "name": "sg-project-1",
+  "version": "1.0.0",
+  "description": "Sparta Global Project 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcolairo/sg-project-1.git"
+  },
+  "author": "jcolairo@sparaglobal.co",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcolairo/sg-project-1/issues"
+  },
+  "homepage": "https://github.com/jcolairo/sg-project-1#readme"
+}
