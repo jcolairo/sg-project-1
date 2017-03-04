@@ -31,3 +31,14 @@
 .column6 {
   display: inline-block;
 }
+.counter {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.player1 {
+  color: red;
+}
+.player2 {
+  color: blue;
+}
