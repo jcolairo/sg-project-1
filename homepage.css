@@ -1,5 +1,9 @@
-section {
-  margin: auto;
+.space {
+  margin: 100px;
+  display: block;
+}
+.text {
+  margin: 50px;
 }
 .btn {
   margin: 10px;
