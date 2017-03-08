@@ -58,82 +58,388 @@ $(document).ready(function () {
     col6
   ];
 
-
   console.log(arrayObject);
   console.log(arrayObject[0][0]);
 
-
-  // function testClick(){
-  //   $('#00').click(function(){
-  //     count++;
-  //     $(this).toggleClass('red', count % 1 === 0);
-  //     $(this).toggleClass('blue', count % 2 === 0);
-  //     if($('#00').has('.blue')){
-  //       alert('hello');
-  //       console.log(testing);
-  //     } else if($('#01').has('.blue')) {
-  //       alert('hello world');
-  //     }
-
-      // testing = $(this);
-      // alert('hello');
-      // if($(this).attr('id') === 'c00'){
-      //   alert('hello');
-      // } else{
-      //   console.log('not');
-      // }
 });
-
-
-  //}
-
-
-
 
 var count = 0;
 $('.container').children().children().children().click(function() {
 
+  var c00blue = $('#00').hasClass('blue', 'red');
+  var c01blue = $('#01').hasClass('blue', 'red');
+  var c02blue = $('#02').hasClass('blue', 'red');
+  var c03blue = $('#03').hasClass('blue', 'red');
+  var c04blue = $('#04').hasClass('blue', 'red');
+  var c05blue = $('#05').hasClass('blue', 'red');
+
+  var c00red = $('#00').hasClass('red');
+  var c01red = $('#01').hasClass('red');
+  var c02red = $('#02').hasClass('red');
+  var c03red = $('#03').hasClass('red');
+  var c04red = $('#04').hasClass('red');
+  var c05red = $('#05').hasClass('red');
+
+  var c10blue = $('#10').hasClass('blue');
+  var c11blue = $('#11').hasClass('blue');
+  var c12blue = $('#12').hasClass('blue');
+  var c13blue = $('#13').hasClass('blue');
+  var c14blue = $('#14').hasClass('blue');
+  var c15blue = $('#15').hasClass('blue');
+
+  var c20blue = $('#20').hasClass('blue');
+  var c21blue = $('#21').hasClass('blue');
+  var c22blue = $('#22').hasClass('blue');
+  var c23blue = $('#23').hasClass('blue');
+  var c24blue = $('#24').hasClass('blue');
+  var c25blue = $('#25').hasClass('blue');
+
+  var c30blue = $('#30').hasClass('blue');
+  var c31blue = $('#31').hasClass('blue');
+  var c32blue = $('#32').hasClass('blue');
+  var c33blue = $('#33').hasClass('blue');
+  var c34blue = $('#34').hasClass('blue');
+  var c35blue = $('#35').hasClass('blue');
+
+  var c40blue = $('#40').hasClass('blue');
+  var c41blue = $('#41').hasClass('blue');
+  var c42blue = $('#42').hasClass('blue');
+  var c43blue = $('#43').hasClass('blue');
+  var c44blue = $('#44').hasClass('blue');
+  var c45blue = $('#45').hasClass('blue');
+
+  var c50blue = $('#50').hasClass('blue');
+  var c51blue = $('#51').hasClass('blue');
+  var c52blue = $('#52').hasClass('blue');
+  var c53blue = $('#53').hasClass('blue');
+  var c54blue = $('#54').hasClass('blue');
+  var c55blue = $('#55').hasClass('blue');
+
   count++;
   $(this).toggleClass('red', count % 1 === 0);
   $(this).toggleClass('blue', count % 2 === 0);
+  //$(this).toggleClass('red', count % 3 === 0);
 
   $(function() {
-    if ($('c00').has('red')) {
-      alert('Winner');
+    if (c00blue && c01blue && c02blue && c03blue) {
+      alert('Blue Winner');
     }
   });
+  $(function() {
+    if (c01blue && c02blue && c03blue && c04blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c02blue && c03blue && c04blue && c05blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c10blue && c11blue && c12blue && c13blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c11blue && c12blue && c13blue && c14blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c12blue && c13blue && c14blue && c15blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c20blue && c21blue && c22blue && c23blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c21blue && c22blue && c23blue && c24blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c22blue && c23blue && c24blue && c25blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c30blue && c31blue && c32blue && c33blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c31blue && c32blue && c33blue && c34blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c32blue && c33blue && c34blue && c35blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c40blue && c41blue && c42blue && c43blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c41blue && c42blue && c43blue && c44blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c42blue && c43blue && c44blue && c45blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c50blue && c51blue && c52blue && c53blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c51blue && c52blue && c53blue && c54blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c52blue && c53blue && c54blue && c55blue) {
+      alert('Blue Winner');
+    }
+  });
+
+
+  $(function() {
+    if (c00blue && c10blue && c20blue && c30blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c10blue && c20blue && c30blue && c40blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c20blue && c30blue && c40blue && c50blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c01blue && c11blue && c21blue && c31blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c11blue && c21blue && c31blue && c41blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c21blue && c31blue && c41blue && c51blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c02blue && c12blue && c22blue && c32blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c12blue && c22blue && c32blue && c42blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c22blue && c32blue && c42blue && c52blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c03blue && c13blue && c23blue && c33blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c13blue && c23blue && c33blue && c43blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c23blue && c33blue && c43blue && c53blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c04blue && c14blue && c24blue && c34blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c14blue && c24blue && c34blue && c44blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c24blue && c34blue && c44blue && c54blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c05blue && c15blue && c25blue && c35blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c15blue && c25blue && c35blue && c45blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c25blue && c35blue && c45blue && c55blue) {
+      alert('Blue Winner');
+    }
+  });
+
+
+  $(function() {
+    if (c25blue && c34blue && c43blue && c52blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c15blue && c24blue && c33blue && c42blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c24blue && c33blue && c42blue && c51blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c05blue && c14blue && c23blue && c32blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c14blue && c23blue && c32blue && c41blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c23blue && c32blue && c41blue && c50blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c04blue && c13blue && c22blue && c31blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c13blue && c22blue && c31blue && c40blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c03blue && c12blue && c21blue && c30blue) {
+      alert('Blue Winner');
+    }
+  });
+
+
+  $(function() {
+    if (c35blue && c24blue && c13blue && c02blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c45blue && c34blue && c23blue && c12blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c34blue && c23blue && c12blue && c01blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c55blue && c44blue && c33blue && c22blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c44blue && c33blue && c22blue && c11blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c33blue && c22blue && c11blue && c00blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c54blue && c43blue && c32blue && c21blue) {
+      alert('Blue Winner');
+    }
+  });
+  $(function() {
+    if (c43blue && c32blue && c21blue && c10blue) {
+      alert('Blue Winner');
+    }
+  });
+
+  $(function() {
+    if (c53blue && c42blue && c31blue && c20blue) {
+      alert('Blue Winner');
+    }
+  });
+
+
+  $(function() {
+    if (c00red && c01red && c02red && c03red) {
+      alert('red Winner');
+    }
+  });
+  $(function() {
+    if (c01red && c02red && c03red && c04red) {
+      alert('red Winner');
+    }
+  });
+  $(function() {
+    if (c02red && c03red && c04red && c05red) {
+      alert('red Winner');
+    }
+  });
+
 });
 
-  // console.log(circle55);
-
-  //$('.circle').hasId('red');
-//  $( 'section:has(div)'.addClass('hahahahahahahahaah') );
-
-  // for (var i = 0, i < col1.length, i++);
-  //   if(col1[i] === 0)
 
 console.log($('.circle').click(function () {
   console.log($(this).attr('id'),
     console.log($(this).attr('class')));
 }));
 
-  // $(function() {
-  //   if ($('.circle').has('.red')) {
-  //     alert('Winner');
-  //   }
-  // });
-
-
-  //
-  //   && c01 === $('.cirlce').hasClass('red') && c02 === $('.cirlce').hasClass('red') && c03 === $('.cirlce').hasClass('red')) {
-  //     alert('Winner');
-  //   } else (c01 === $('.cirlce').hasClass('red') && c02 === $('.cirlce').hasClass('red') && c03 === $('.cirlce').hasClass('red') && c04 === $('.cirlce').hasClass('red')); {
-  //     alert('Winner');
-  //   }
-  // });
-
-
-  // });
 
   // var currentID = $(this).attr('id');
   // var firstCoOrdinate = currentID[0];
