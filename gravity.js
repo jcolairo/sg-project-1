@@ -63,12 +63,46 @@ $(document).ready(function () {
   console.log(arrayObject[0][0]);
 
 
-  var count = 0;
-  $('.circle').click(function() {
-    count++;
-    $(this).toggleClass('red', count % 1 === 0);
-    $(this).toggleClass('blue', count % 2 === 0);
+  // function testClick(){
+  //   $('#00').click(function(){
+  //     count++;
+  //     $(this).toggleClass('red', count % 1 === 0);
+  //     $(this).toggleClass('blue', count % 2 === 0);
+  //     if($('#00').has('.blue')){
+  //       alert('hello');
+  //       console.log(testing);
+  //     } else if($('#01').has('.blue')) {
+  //       alert('hello world');
+  //     }
+
+      // testing = $(this);
+      // alert('hello');
+      // if($(this).attr('id') === 'c00'){
+      //   alert('hello');
+      // } else{
+      //   console.log('not');
+      // }
+});
+
+
+  //}
+
+
+
+
+var count = 0;
+$('.container').children().children().children().click(function() {
+
+  count++;
+  $(this).toggleClass('red', count % 1 === 0);
+  $(this).toggleClass('blue', count % 2 === 0);
+
+  $(function() {
+    if ($('c00').has('red')) {
+      alert('Winner');
+    }
   });
+});
 
   // console.log(circle55);
 
@@ -78,10 +112,29 @@ $(document).ready(function () {
   // for (var i = 0, i < col1.length, i++);
   //   if(col1[i] === 0)
 
-  console.log($('.circle').click(function () {
-    console.log($(this).attr('id'),
+console.log($('.circle').click(function () {
+  console.log($(this).attr('id'),
     console.log($(this).attr('class')));
-  }));
+}));
+
+  // $(function() {
+  //   if ($('.circle').has('.red')) {
+  //     alert('Winner');
+  //   }
+  // });
+
+
+  //
+  //   && c01 === $('.cirlce').hasClass('red') && c02 === $('.cirlce').hasClass('red') && c03 === $('.cirlce').hasClass('red')) {
+  //     alert('Winner');
+  //   } else (c01 === $('.cirlce').hasClass('red') && c02 === $('.cirlce').hasClass('red') && c03 === $('.cirlce').hasClass('red') && c04 === $('.cirlce').hasClass('red')); {
+  //     alert('Winner');
+  //   }
+  // });
+
+
+  // });
+
   // var currentID = $(this).attr('id');
   // var firstCoOrdinate = currentID[0];
   // var secondCoOrdinate = currentID[1];
@@ -100,7 +153,7 @@ $(document).ready(function () {
     // $('.circle').dblclick(function() {
     //   $(this).addClass('blue');
     // });
-});
+
 // });
 
 // var newGame = [ col ] [ col ]
