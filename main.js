@@ -1,35 +1,35 @@
 $(document).ready(function () {
 // Player 1 - Column1
 
-  $('.circle16').mouseenter(function () {
-    $('.circle16').css('background-color', 'red');
+  $('.circleG16').mouseenter(function () {
+    $('.circleG16').css('background-color', 'red');
   }).mouseleave(function () {
-    $('.circle16').css('background-color', 'white');
+    $('.circleG16').css('background-color', 'white');
   });
-  $('.circle15').mouseenter(function () {
-    $('.circle15').css('background-color', 'red');
+  $('.circleG15').mouseenter(function () {
+    $('.circleG15').css('background-color', 'red');
   }).mouseleave(function () {
-    $('.circle15').css('background-color', 'white');
+    $('.circleG15').css('background-color', 'white');
   });
-  $('.circle14').mouseenter(function () {
-    $('.circle14').css('background-color', 'red');
+  $('.circleG14').mouseenter(function () {
+    $('.circleG14').css('background-color', 'red');
   }).mouseleave(function () {
-    $('.circle14').css('background-color', 'white');
+    $('.circleG14').css('background-color', 'white');
   });
-  $('.circle13').mouseenter(function () {
-    $('.circle13').css('background-color', 'red');
+  $('.circleG13').mouseenter(function () {
+    $('.circleG13').css('background-color', 'red');
   }).mouseleave(function () {
-    $('.circle13').css('background-color', 'white');
+    $('.circleG13').css('background-color', 'white');
   });
-  $('.circle12').mouseenter(function () {
-    $('.circle12').css('background-color', 'red');
+  $('.circleG12').mouseenter(function () {
+    $('.circleG12').css('background-color', 'red');
   }).mouseleave(function () {
-    $('.circle12').css('background-color', 'white');
+    $('.circleG12').css('background-color', 'white');
   });
-  $('.circle11').mouseenter(function () {
-    $('.circle11').css('background-color', 'red');
+  $('.circleG11').mouseenter(function () {
+    $('.circleG11').css('background-color', 'red');
   }).mouseleave(function () {
-    $('.circle11').css('background-color', 'white');
+    $('.circleG11').css('background-color', 'white');
   });
 
 // Player 1 - Column2
