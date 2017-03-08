@@ -73,52 +73,44 @@ $('.container').children().children().children().click(function() {
   var c04blue = $('#04').hasClass('blue', 'red');
   var c05blue = $('#05').hasClass('blue', 'red');
 
-  var c00red = $('#00').hasClass('red');
-  var c01red = $('#01').hasClass('red');
-  var c02red = $('#02').hasClass('red');
-  var c03red = $('#03').hasClass('red');
-  var c04red = $('#04').hasClass('red');
-  var c05red = $('#05').hasClass('red');
+  var c10blue = $('#10').hasClass('blue', 'red');
+  var c11blue = $('#11').hasClass('blue', 'red');
+  var c12blue = $('#12').hasClass('blue', 'red');
+  var c13blue = $('#13').hasClass('blue', 'red');
+  var c14blue = $('#14').hasClass('blue', 'red');
+  var c15blue = $('#15').hasClass('blue', 'red');
 
-  var c10blue = $('#10').hasClass('blue');
-  var c11blue = $('#11').hasClass('blue');
-  var c12blue = $('#12').hasClass('blue');
-  var c13blue = $('#13').hasClass('blue');
-  var c14blue = $('#14').hasClass('blue');
-  var c15blue = $('#15').hasClass('blue');
+  var c20blue = $('#20').hasClass('blue', 'red');
+  var c21blue = $('#21').hasClass('blue', 'red');
+  var c22blue = $('#22').hasClass('blue', 'red');
+  var c23blue = $('#23').hasClass('blue', 'red');
+  var c24blue = $('#24').hasClass('blue', 'red');
+  var c25blue = $('#25').hasClass('blue', 'red');
 
-  var c20blue = $('#20').hasClass('blue');
-  var c21blue = $('#21').hasClass('blue');
-  var c22blue = $('#22').hasClass('blue');
-  var c23blue = $('#23').hasClass('blue');
-  var c24blue = $('#24').hasClass('blue');
-  var c25blue = $('#25').hasClass('blue');
+  var c30blue = $('#30').hasClass('blue', 'red');
+  var c31blue = $('#31').hasClass('blue', 'red');
+  var c32blue = $('#32').hasClass('blue', 'red');
+  var c33blue = $('#33').hasClass('blue', 'red');
+  var c34blue = $('#34').hasClass('blue', 'red');
+  var c35blue = $('#35').hasClass('blue', 'red');
 
-  var c30blue = $('#30').hasClass('blue');
-  var c31blue = $('#31').hasClass('blue');
-  var c32blue = $('#32').hasClass('blue');
-  var c33blue = $('#33').hasClass('blue');
-  var c34blue = $('#34').hasClass('blue');
-  var c35blue = $('#35').hasClass('blue');
+  var c40blue = $('#40').hasClass('blue', 'red');
+  var c41blue = $('#41').hasClass('blue', 'red');
+  var c42blue = $('#42').hasClass('blue', 'red');
+  var c43blue = $('#43').hasClass('blue', 'red');
+  var c44blue = $('#44').hasClass('blue', 'red');
+  var c45blue = $('#45').hasClass('blue', 'red');
 
-  var c40blue = $('#40').hasClass('blue');
-  var c41blue = $('#41').hasClass('blue');
-  var c42blue = $('#42').hasClass('blue');
-  var c43blue = $('#43').hasClass('blue');
-  var c44blue = $('#44').hasClass('blue');
-  var c45blue = $('#45').hasClass('blue');
-
-  var c50blue = $('#50').hasClass('blue');
-  var c51blue = $('#51').hasClass('blue');
-  var c52blue = $('#52').hasClass('blue');
-  var c53blue = $('#53').hasClass('blue');
-  var c54blue = $('#54').hasClass('blue');
-  var c55blue = $('#55').hasClass('blue');
+  var c50blue = $('#50').hasClass('blue', 'red');
+  var c51blue = $('#51').hasClass('blue', 'red');
+  var c52blue = $('#52').hasClass('blue', 'red');
+  var c53blue = $('#53').hasClass('blue', 'red');
+  var c54blue = $('#54').hasClass('blue', 'red');
+  var c55blue = $('#55').hasClass('blue', 'red');
 
   count++;
   $(this).toggleClass('red', count % 1 === 0);
   $(this).toggleClass('blue', count % 2 === 0);
-  //$(this).toggleClass('red', count % 3 === 0);
 
   $(function() {
     if (c00blue && c01blue && c02blue && c03blue) {
@@ -412,23 +404,6 @@ $('.container').children().children().children().click(function() {
   $(function() {
     if (c53blue && c42blue && c31blue && c20blue) {
       alert('Blue Winner');
-    }
-  });
-
-
-  $(function() {
-    if (c00red && c01red && c02red && c03red) {
-      alert('red Winner');
-    }
-  });
-  $(function() {
-    if (c01red && c02red && c03red && c04red) {
-      alert('red Winner');
-    }
-  });
-  $(function() {
-    if (c02red && c03red && c04red && c05red) {
-      alert('red Winner');
     }
   });
 
