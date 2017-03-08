@@ -60,8 +60,26 @@ $(document).ready(function () {
   console.log(arrayObject);
   console.log(arrayObject[0][0]);
 
+  var circles = {};
+  var counters = [
+    '00', '01', '02', '03', '04', '05',
+    '10', '11', '12', '13', '14', '15',
+    '20', '21', '22', '23', '24', '25',
+    '30', '31', '32', '33', '34', '35',
+    '40', '41', '42', '43', '44', '45',
+    '50', '51', '52', '53', '54', '55'
+  ];
+
+  counters.forEach(function (counter) {
+    circles[counter] = $('#' + counter).hasClass('red');
+  });
+  console.log('circles:', circles);
+
+  function isEven(num) {
+    return parseInt(num) % 2 === 0;
+  }
   var count = 0;
-  $('.container').children().children().children().click(function() {
+  $('.container .circle').click(function() {
 
     var c00red = $('#00').hasClass('red');
     var c01red = $('#01').hasClass('red');
@@ -106,12 +124,15 @@ $(document).ready(function () {
     var c55red = $('#55').hasClass('red');
 
     count++;
-    $(this).toggleClass('red', count % 1 === 0);
-    $(this).toggleClass('blue', count % 2 === 0);
-    //$(this).toggleClass('red', count % 3 === 0);
+    var circleClass = (isEven(count)) ? 'blue' : 'red';
+    $(this).addClass(circleClass);
+
+    // $(this).toggleClass('red', count % 1 === 0);
+    // $(this).toggleClass('blue', count % 2 === 0);
 
     $(function() {
-      if (c00red && c01red && c02red && c03red) {
+      if (circles['00'] && c01red && c02red && c03red) {
+      // if (c00red && c01red && c02red && c03red) {
         alert('Red Winner');
       }
     });

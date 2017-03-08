@@ -13,10 +13,6 @@
   background-color: white;
   margin: 10px;
 }
-
-/*.circle:hover {
-  background-color: red!important;
-}*/
 .column1 {
   display: inline-block;
 }
@@ -40,16 +36,12 @@
   width: 100px;
   border-radius: 50%;
 }
-/*.player1 {
-  color: red;
-}
-.player2 {
-  color: blue;
-}*/
-
 .red {
   background-color: red!important;
 }
 .blue {
   background-color: blue!important;
+}
+.black {
+  background-color: black;
 }
