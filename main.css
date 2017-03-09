@@ -1,3 +1,6 @@
+h1 {
+  text-align: center;
+}
 .container {
   height: 700px;
   width: 790px;
@@ -42,6 +45,6 @@
 .blue {
   background-color: blue!important;
 }
-.black {
-  background-color: grey;
-}
+/*.black {
+  background-color: #b2b2b2;
+}*/

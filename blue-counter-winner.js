@@ -84,48 +84,6 @@ $('.container .circle').click(function() {
     circles[counter] = $('#' + counter).hasClass('blue');
   });
 
-  // var c00blue = $('#00').hasClass('blue');
-  // var c01blue = $('#01').hasClass('blue');
-  // var c02blue = $('#02').hasClass('blue');
-  // var c03blue = $('#03').hasClass('blue');
-  // var c04blue = $('#04').hasClass('blue');
-  // var c05blue = $('#05').hasClass('blue');
-  //
-  // var c10blue = $('#10').hasClass('blue');
-  // var c11blue = $('#11').hasClass('blue');
-  // var c12blue = $('#12').hasClass('blue');
-  // var c13blue = $('#13').hasClass('blue');
-  // var c14blue = $('#14').hasClass('blue');
-  // var c15blue = $('#15').hasClass('blue');
-  //
-  // var c20blue = $('#20').hasClass('blue');
-  // var c21blue = $('#21').hasClass('blue');
-  // var c22blue = $('#22').hasClass('blue');
-  // var c23blue = $('#23').hasClass('blue');
-  // var c24blue = $('#24').hasClass('blue');
-  // var c25blue = $('#25').hasClass('blue');
-  //
-  // var c30blue = $('#30').hasClass('blue');
-  // var c31blue = $('#31').hasClass('blue');
-  // var c32blue = $('#32').hasClass('blue');
-  // var c33blue = $('#33').hasClass('blue');
-  // var c34blue = $('#34').hasClass('blue');
-  // var c35blue = $('#35').hasClass('blue');
-  //
-  // var c40blue = $('#40').hasClass('blue');
-  // var c41blue = $('#41').hasClass('blue');
-  // var c42blue = $('#42').hasClass('blue');
-  // var c43blue = $('#43').hasClass('blue');
-  // var c44blue = $('#44').hasClass('blue');
-  // var c45blue = $('#45').hasClass('blue');
-  //
-  // var c50blue = $('#50').hasClass('blue');
-  // var c51blue = $('#51').hasClass('blue');
-  // var c52blue = $('#52').hasClass('blue');
-  // var c53blue = $('#53').hasClass('blue');
-  // var c54blue = $('#54').hasClass('blue');
-  // var c55blue = $('#55').hasClass('blue');
-
   count++;
 
   var circleClass = (isEven(count)) ? 'blue' : 'red';

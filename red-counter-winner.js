@@ -83,48 +83,6 @@ $(document).ready(function () {
       circles[counter] = $('#' + counter).hasClass('red');
     });
 
-    // var c00red = $('#00').hasClass('red');
-    // var c01red = $('#01').hasClass('red');
-    // var c02red = $('#02').hasClass('red');
-    // var c03red = $('#03').hasClass('red');
-    // var c04red = $('#04').hasClass('red');
-    // var c05red = $('#05').hasClass('red');
-
-    // var c10red = $('#10').hasClass('red');
-    // var c11red = $('#11').hasClass('red');
-    // var c12red = $('#12').hasClass('red');
-    // var c13red = $('#13').hasClass('red');
-    // var c14red = $('#14').hasClass('red');
-    // var c15red = $('#15').hasClass('red');
-    //
-    // var c20red = $('#20').hasClass('red');
-    // var c21red = $('#21').hasClass('red');
-    // var c22red = $('#22').hasClass('red');
-    // var c23red = $('#23').hasClass('red');
-    // var c24red = $('#24').hasClass('red');
-    // var c25red = $('#25').hasClass('red');
-    //
-    // var c30red = $('#30').hasClass('red');
-    // var c31red = $('#31').hasClass('red');
-    // var c32red = $('#32').hasClass('red');
-    // var c33red = $('#33').hasClass('red');
-    // var c34red = $('#34').hasClass('red');
-    // var c35red = $('#35').hasClass('red');
-    //
-    // var c40red = $('#40').hasClass('red');
-    // var c41red = $('#41').hasClass('red');
-    // var c42red = $('#42').hasClass('red');
-    // var c43red = $('#43').hasClass('red');
-    // var c44red = $('#44').hasClass('red');
-    // var c45red = $('#45').hasClass('red');
-    //
-    // var c50red = $('#50').hasClass('red');
-    // var c51red = $('#51').hasClass('red');
-    // var c52red = $('#52').hasClass('red');
-    // var c53red = $('#53').hasClass('red');
-    // var c54red = $('#54').hasClass('red');
-    // var c55red = $('#55').hasClass('red');
-
     count++;
     var circleClass = (isEven(count)) ? 'blue' : 'red';
     $(this).addClass(circleClass);
