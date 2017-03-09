@@ -73,345 +73,121 @@ var counters = [
   '50', '51', '52', '53', '54', '55'
 ];
 
-function isEven(num) {
-  return parseInt(num) % 2 === 0;
-}
-
-var count = 0;
-$('.container .circle').click(function() {
-
+$('.circle').click(function () {
   counters.forEach(function (counter) {
     circles[counter] = $('#' + counter).hasClass('blue');
   });
-
-  count++;
-
-  var circleClass = (isEven(count)) ? 'blue' : 'red';
-  $(this).addClass(circleClass);
-
-
-  $(function() {
-    if (circles['00'] && circles['01'] && circles['02'] && circles['03']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['01'] && circles['02'] && circles['03'] && circles['04']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['02'] && circles['03'] && circles['04'] && circles['05']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['10'] && circles['11'] && circles['12'] && circles['13']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['11'] && circles['12'] && circles['13'] && circles['14']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['12'] && circles['13'] && circles['14'] && circles['15']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['20'] && circles['21'] && circles['22'] && circles['23']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['21'] && circles['22'] && circles['23'] && circles['24']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['22'] && circles['23'] && circles['24'] && circles['25']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['30'] && circles['31'] && circles['32'] && circles['33']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['31'] && circles['32'] && circles['33'] && circles['34']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['32'] && circles['33'] && circles['34'] && circles['35']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['40'] && circles['41'] && circles['42'] && circles['43']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['41'] && circles['42'] && circles['43'] && circles['44']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['42'] && circles['43'] && circles['44'] && circles['45']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['50'] && circles['51'] && circles['52'] && circles['53']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['51'] && circles['52'] && circles['53'] && circles['54']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['52'] && circles['53'] && circles['54'] && circles['55']) {
-      alert('Blue Winner');
-    }
-  });
-
-
-  $(function() {
-    if (circles['00'] && circles['10'] && circles['20'] && circles['30']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['10'] && circles['20'] && circles['30'] && circles['40']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['20'] && circles['30'] && circles['40'] && circles['50']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['01'] && circles['11'] && circles['21'] && circles['31']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['11'] && circles['21'] && circles['31'] && circles['41']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['21'] && circles['31'] && circles['41'] && circles['51']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['02'] && circles['12'] && circles['22'] && circles['32']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['12'] && circles['22'] && circles['32'] && circles['42']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['22'] && circles['32'] && circles['42'] && circles['52']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['03'] && circles['13'] && circles['23'] && circles['33']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['13'] && circles['23'] && circles['33'] && circles['43']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['23'] && circles['33'] && circles['43'] && circles['53']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['04'] && circles['14'] && circles['24'] && circles['34']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['14'] && circles['24'] && circles['34'] && circles['44']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['24'] && circles['34'] && circles['44'] && circles['54']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['05'] && circles['15'] && circles['25'] && circles['35']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['15'] && circles['25'] && circles['35'] && circles['45']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['25'] && circles['35'] && circles['45'] && circles['55']) {
-      alert('Blue Winner');
-    }
-  });
-
-
-  $(function() {
-    if (circles['25'] && circles['34'] && circles['43'] && circles['52']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['15'] && circles['24'] && circles['33'] && circles['42']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['24'] && circles['33'] && circles['42'] && circles['51']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['05'] && circles['14'] && circles['23'] && circles['32']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['14'] && circles['23'] && circles['32'] && circles['41']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['23'] && circles['32'] && circles['41'] && circles['50']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['04'] && circles['13'] && circles['22'] && circles['31']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['13'] && circles['22'] && circles['31'] && circles['40']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['03'] && circles['12'] && circles['21'] && circles['30']) {
-      alert('Blue Winner');
-    }
-  });
-
-
-  $(function() {
-    if (circles['35'] && circles['24'] && circles['13'] && circles['02']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['45'] && circles['34'] && circles['23'] && circles['12']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['34'] && circles['23'] && circles['12'] && circles['01']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['55'] && circles['44'] && circles['33'] && circles['22']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['44'] && circles['33'] && circles['22'] && circles['11']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['33'] && circles['22'] && circles['11'] && circles['00']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['54'] && circles['43'] && circles['32'] && circles['21']) {
-      alert('Blue Winner');
-    }
-  });
-  $(function() {
-    if (circles['43'] && circles['32'] && circles['21'] && circles['10']) {
-      alert('Blue Winner');
-    }
-  });
-
-  $(function() {
-    if (circles['53'] && circles['42'] && circles['31'] && circles['20']) {
-      alert('Blue Winner');
-    }
-  });
+  checkWinner();
 });
 
-
-console.log($('.circle').click(function () {
-  console.log($(this).attr('id'),
-    console.log($(this).attr('class')));
-}));
-
-
-  // var currentID = $(this).attr('id');
-  // var firstCoOrdinate = currentID[0];
-  // var secondCoOrdinate = currentID[1];
-  //
-  // arrayObject[firstCoOrdinate][secondCoOrdinate] = 'red';
-  // arrayObject[firstCoOrdinate][secondCoOrdinate] = 'blue';
-
-
-
-
-  // var currentID = $(this).attr('id'); //34
-  // var firstCoOr = currentID[0]; // 3
-  // var secondCoOr = currentID[1]; // 4
-  //
-  // arrayObject[firstCoOr][secondCoOr] = 'red';
-    // $('.circle').dblclick(function() {
-    //   $(this).addClass('blue');
-    // });
-
-// });
-
-// var newGame = [ col ] [ col ]
+function checkWinner () {
+  if (circles['00'] && circles['01'] && circles['02'] && circles['03']) {
+    alert('Blue Winner');
+  } else if (circles['01'] && circles['02'] && circles['03'] && circles['04']) {
+    alert('Blue Winner');
+  } else if (circles['02'] && circles['03'] && circles['04'] && circles['05']) {
+    alert('Blue Winner');
+  } else if (circles['10'] && circles['11'] && circles['12'] && circles['13']) {
+    alert('Blue Winner');
+  } else if (circles['11'] && circles['12'] && circles['13'] && circles['14']) {
+    alert('Blue Winner');
+  } else if (circles['12'] && circles['13'] && circles['14'] && circles['15']) {
+    alert('Blue Winner');
+  } else if (circles['20'] && circles['21'] && circles['22'] && circles['23']) {
+    alert('Blue Winner');
+  } else if (circles['21'] && circles['22'] && circles['23'] && circles['24']) {
+    alert('Blue Winner');
+  } else if (circles['22'] && circles['23'] && circles['24'] && circles['25']) {
+    alert('Blue Winner');
+  } else if (circles['30'] && circles['31'] && circles['32'] && circles['33']) {
+    alert('Blue Winner');
+  } else if (circles['31'] && circles['32'] && circles['33'] && circles['34']) {
+    alert('Blue Winner');
+  } else if (circles['32'] && circles['33'] && circles['34'] && circles['35']) {
+    alert('Blue Winner');
+  } else if (circles['40'] && circles['41'] && circles['42'] && circles['43']) {
+    alert('Blue Winner');
+  } else if (circles['41'] && circles['42'] && circles['43'] && circles['44']) {
+    alert('Blue Winner');
+  } else if (circles['42'] && circles['43'] && circles['44'] && circles['45']) {
+    alert('Blue Winner');
+  } else if (circles['50'] && circles['51'] && circles['52'] && circles['53']) {
+    alert('Blue Winner');
+  } else if (circles['51'] && circles['52'] && circles['53'] && circles['54']) {
+    alert('Blue Winner');
+  } else if (circles['52'] && circles['53'] && circles['54'] && circles['55']) {
+    alert('Blue Winner');
+  } else if (circles['00'] && circles['10'] && circles['20'] && circles['30']) {
+    alert('Blue Winner');
+  } else if (circles['10'] && circles['20'] && circles['30'] && circles['40']) {
+    alert('Blue Winner');
+  } else if (circles['20'] && circles['30'] && circles['40'] && circles['50']) {
+    alert('Blue Winner');
+  } else if (circles['01'] && circles['11'] && circles['21'] && circles['31']) {
+    alert('Blue Winner');
+  } else if (circles['11'] && circles['21'] && circles['31'] && circles['41']) {
+    alert('Blue Winner');
+  } else if (circles['21'] && circles['31'] && circles['41'] && circles['51']) {
+    alert('Blue Winner');
+  } else if (circles['02'] && circles['12'] && circles['22'] && circles['32']) {
+    alert('Blue Winner');
+  } else if (circles['12'] && circles['22'] && circles['32'] && circles['42']) {
+    alert('Blue Winner');
+  } else if (circles['22'] && circles['32'] && circles['42'] && circles['52']) {
+    alert('Blue Winner');
+  } else if (circles['03'] && circles['13'] && circles['23'] && circles['33']) {
+    alert('Blue Winner');
+  } else if (circles['13'] && circles['23'] && circles['33'] && circles['43']) {
+    alert('Blue Winner');
+  } else if (circles['23'] && circles['33'] && circles['43'] && circles['53']) {
+    alert('Blue Winner');
+  } else if (circles['04'] && circles['14'] && circles['24'] && circles['34']) {
+    alert('Blue Winner');
+  } else if (circles['14'] && circles['24'] && circles['34'] && circles['44']) {
+    alert('Blue Winner');
+  } else if (circles['24'] && circles['34'] && circles['44'] && circles['54']) {
+    alert('Blue Winner');
+  } else if (circles['05'] && circles['15'] && circles['25'] && circles['35']) {
+    alert('Blue Winner');
+  } else if (circles['15'] && circles['25'] && circles['35'] && circles['45']) {
+    alert('Blue Winner');
+  } else if (circles['25'] && circles['35'] && circles['45'] && circles['55']) {
+    alert('Blue Winner');
+  } else if (circles['25'] && circles['34'] && circles['43'] && circles['52']) {
+    alert('Blue Winner');
+  } else if (circles['15'] && circles['24'] && circles['33'] && circles['42']) {
+    alert('Blue Winner');
+  } else if (circles['24'] && circles['33'] && circles['42'] && circles['51']) {
+    alert('Blue Winner');
+  } else if (circles['05'] && circles['14'] && circles['23'] && circles['32']) {
+    alert('Blue Winner');
+  } else if (circles['14'] && circles['23'] && circles['32'] && circles['41']) {
+    alert('Blue Winner');
+  } else if (circles['23'] && circles['32'] && circles['41'] && circles['50']) {
+    alert('Blue Winner');
+  } else if (circles['04'] && circles['13'] && circles['22'] && circles['31']) {
+    alert('Blue Winner');
+  } else if (circles['13'] && circles['22'] && circles['31'] && circles['40']) {
+    alert('Blue Winner');
+  } else if (circles['03'] && circles['12'] && circles['21'] && circles['30']) {
+    alert('Blue Winner');
+  } else if (circles['35'] && circles['24'] && circles['13'] && circles['02']) {
+    alert('Blue Winner');
+  } else if (circles['45'] && circles['34'] && circles['23'] && circles['12']) {
+    alert('Blue Winner');
+  } else if (circles['34'] && circles['23'] && circles['12'] && circles['01']) {
+    alert('Blue Winner');
+  } else if (circles['55'] && circles['44'] && circles['33'] && circles['22']) {
+    alert('Blue Winner');
+  } else if (circles['44'] && circles['33'] && circles['22'] && circles['11']) {
+    alert('Blue Winner');
+  } else if (circles['33'] && circles['22'] && circles['11'] && circles['00']) {
+    alert('Blue Winner');
+  } else if (circles['54'] && circles['43'] && circles['32'] && circles['21']) {
+    alert('Blue Winner');
+  } else if (circles['43'] && circles['32'] && circles['21'] && circles['10']) {
+    alert('Blue Winner');
+  } else if (circles['53'] && circles['42'] && circles['31'] && circles['20']) {
+    alert('Blue Winner');
+  }
+}

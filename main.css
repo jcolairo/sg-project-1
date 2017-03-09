@@ -16,6 +16,9 @@ h1 {
   background-color: white;
   margin: 10px;
 }
+.circle:hover {
+  background-color: #545454;
+}
 .column1 {
   display: inline-block;
 }
@@ -45,6 +48,3 @@ h1 {
 .blue {
   background-color: blue!important;
 }
-/*.black {
-  background-color: #b2b2b2;
-}*/
