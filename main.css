@@ -18,6 +18,7 @@ h1 {
 }
 .circle:hover {
   background-color: #545454;
+  opacity: 0.5;
 }
 .btn {
   display: block;
