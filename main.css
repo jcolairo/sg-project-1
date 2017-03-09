@@ -25,7 +25,19 @@ h1 {
   height: 50px;
   width: 100px;
   font-size: 20px;
-  background: yellow;
+  background: black;
+  color: white;
+  margin: 10px;
+}
+.link {
+  display: block;
+  text-align: center;
+  height: 50px;
+  width: 250px;
+  font-size: 20px;
+  background: black;
+  color: white;
+  margin: 10px;
 }
 .column1 {
   display: inline-block;

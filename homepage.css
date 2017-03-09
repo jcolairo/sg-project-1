@@ -1,10 +1,18 @@
 .space {
-  margin: 100px;
+  margin: 50px;
   display: block;
 }
 .text {
   margin: 50px;
 }
 .btn {
+  margin: 10px;
+  width: 275px;
+  display: block;
+  text-align: center;
+  height: 50px;
+  font-size: 20px;
+  background: black;
+  color: white;
   margin: 10px;
 }
