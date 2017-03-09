@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $('button').click(function(){
+    document.location.reload();
+
+  });
   var count = 0;
   var col1 = [$('#05'), $('#04'), $('#03'), $('#02'), $('#01'), $('#00')];
   var col2 = [$('#15'), $('#14'), $('#13'), $('#12'), $('#11'), $('#10')];
